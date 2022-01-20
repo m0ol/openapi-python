@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Hello World API
+  description: Mentoria Genisson
+  version: 0.1.9
+servers:
+  - url: http://127.0.0.1:5000
+    description: Optional server description, e.g. Main (production) server
+paths:
+  /helloworld:
+    get:
+      summary: Returns "HelloWorld"
+      description: Just a simple hello world
+      responses:
+        '200':    # status code
+          description: A JSON response of a string
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: string

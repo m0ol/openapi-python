@@ -1,4 +1,11 @@
-import requests
-from flask import *
+from flask import Flask
 
-print("Hello World!")
+app = Flask("HelloWorld")
+
+@app.route("/helloworld", methods=["GET"])
+
+def helloworld():
+    return{"Hello": "World"}
+
+
+app.run()
